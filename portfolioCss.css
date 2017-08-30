@@ -8,27 +8,30 @@
 }
 
 #homePage{
-    background-image: url(images/74H.jpg);
+    background-image: url(https://raw.githubusercontent.com/xpack94/Portfolio2/master/images/74H.jpg);
     height: 100vh;
     background-size: cover;
+    padding: 1px;
     
 }
 #header{
     padding-top: 1px;
     margin-top: -1px;
-    
+    width: 100vw;   
+    position: fixed;
+    top: 0;
 }
 #header::after{
     content: "";
     display: block;
     clear: both;
 }
+#header.displayBackground{
+    background-image: url(https://raw.githubusercontent.com/xpack94/Portfolio2/master/images/74H.jpg);
+}
 
 .fixed{
-    position: fixed;
-    top:0;
-    width: 100vw;
-    background-image: url(images/74H.jpg);
+    background-image: url(https://raw.githubusercontent.com/xpack94/Portfolio2/master/images/74H.jpg);
     background-size: cover;
     z-index: 100;
 }
@@ -45,6 +48,9 @@
     line-height: 41px;
     font-size: 2em;
     cursor: pointer;
+}
+.name a{
+    color: rgb(51,51,51);
 }
 nav{
     float: right;
@@ -80,7 +86,7 @@ nav{
     justify-content: center;
     width: 500px;
     height: 150px;
-    margin: 50px auto;
+    margin: 140px auto 25px auto;
     line-height: 150px;
     border:3px solid white;
     text-transform: uppercase;
@@ -95,7 +101,8 @@ nav{
     text-align: center;
     line-height: 40px;
     font-size: 2em;
-    color:#333;
+    font-family: 'Playfair Display', serif;
+    color:#555;
 }
 .downArrow{
     position: absolute;
@@ -115,7 +122,7 @@ nav{
     100% {bottom: 5px;}
 }
 .scrolled{
-    background-image: url(images/369H.jpg);
+    background-image: url(https://raw.githubusercontent.com/xpack94/Portfolio2/master/images/74H.jpg);
     position:fixed;
     width: 100%;
     top: 0;
@@ -179,10 +186,12 @@ nav{
 
 
 
+
 /* styling the about section -------------------------------------------------------------------------------*/
 
 
-.about,#work,#contact{
+
+.about,.work,.contact{
    
     padding: 15px;
     margin: 100px 20px 20px 20px ;
@@ -192,178 +201,6 @@ nav{
     opacity: 1;
     transition: all 0.4s ease-In-Out;
 }
-.about{
-    padding: 40px;
-}
-
-
-
-.fadeIn{
-    transform: translateY(10%) !important;
-    opacity: 0 !important;
-    
-}
-
-.sample{
-    display: flex;
-    justify-content: center;
-   
-}
-.picture{
-    order:1;
-   
-}
-.picture img{
-    width: 100px;
-    height: 94px;
-    transform: translateY(55px);
-}
-.informationHolder{
-    transform: translateX(-40%);
-    display: flex;
-}
-.information{
-    position: relative;
-    padding: 3px;
-    margin-right: 15px;
-    margin-left: 15px;
-    max-width: 350px;
-    line-height: 1.1em;
-    font-size: 1.1em;
-    border:2px solid #888;
-     box-shadow: 0px 10px 34px -7px rgba(0,0,0,0.72);
-    border-radius: 5%;
-    color: #868e96;
-    font-family: 'Raleway', sans-serif;
-    transform: rotateY(0deg);
-    transition: transform 0.5s ease-In-Out;
-   
-}
-.information span{
-    font-family: 'Anton', sans-serif;
-    font-size: 2.3em;
-    margin: 10px 0;
-    position: absolute;
-    top:-35px;
-    color:black;
-    
-}
-.even {
-    position: relative;
-    
-}
-.odd .informationHolder .information{
-    order: 1;
-}
-.odd .informationHolder{
-    transform: translateX(40%);
-}
-.verticalLine{
-    height: 200px;
-    width: 2px;
-    margin: 0 auto;
-    border:1px solid #f1f1f1;
-}
-.even .information::after{
-      content: "";
-      width: 0; 
-      height: 0; 
-      border-top: 10px solid transparent;
-      border-bottom: 10px solid transparent;
-      border-left: 10px solid #888;
-      position: absolute;
-      right: -10px;
-      top:50%;
-      
-}
-.odd .information::before{
-     content: "";
-      width: 0; 
-      height: 0; 
-      border-top: 10px solid transparent;
-      border-bottom: 10px solid transparent; 
-      border-right:10px solid #888; 
-      position: absolute;
-      left: -10px;
-      top:50%;   
-}
-
-.last ul{
-    margin-left: 25px;
-}
-.information li{
-    display: inline-block;
-    
-}
-.information li img{
-    width: 90px;
-    height: 80px;
-}
-.invisible{
-    opacity: 0;
-    transform: rotateY(90deg);
-}
-
-@media screen and (max-width:860px){
-    
-    .verticalLine{
-        margin: 0 0 0 47px;
-    }
-    .sample{
-        justify-content: flex-start;
-        
-    }
-    .sample .informationHolder{
-        transform: translateX(0%);
-    }
-    .informationHolder .picture{
-        order: 1;
-    }
-    .informationHolder .information{
-        order: 2;
-    }
-    
-    .sample .information::after{
-        content: "";
-        opacity: 0;
-    }
-    .sample .information::before{
-         content: "";
-      width: 0; 
-      height: 0; 
-      border-top: 10px solid transparent;
-      border-bottom: 10px solid transparent; 
-      border-right:10px solid #333; 
-      position: absolute;
-      left: -10px;
-      top:50%;   
-    }
-    
-}
-@media screen and (max-width: 480px){
-    .information li img{
-        width: 35px;
-        height: 30px;
-    }
-    .sample .information::after{
-        content: "";
-        opacity: 0;
-    }
-    .sample .information::before{
-      content: "";
-      opacity: 0;
-    }
-    .information span{
-        font-size: 1.2em;
-    }
-    
-}
-@media screen and (max-width: 380px){
-    .informationHolder .picture{
-        display: none;
-    }
-}
-
 .sectionName{
     text-align: center;
     padding: 20px;
@@ -372,6 +209,82 @@ nav{
     font-size: 2.3em;
     font-family: 'Baloo Bhaijaan', cursive;
 }
+.about{
+    font-family: 'PT Sans', sans-serif;
+    line-height: 30px;
+    font-size: 20px;
+    color: rgb(40,50,49);
+    text-size-adjust:100%;
+}
+.aboutMe, .services{
+    margin-bottom: 15px;
+}
+.mySkills{
+    text-align: center;
+    font-weight: 600;
+    line-height: 30px;
+    font-size: 1.5em;
+    font-family: 'Baloo Bhaijaan', cursive;
+    margin-top: 15px;
+    
+}
+.smallLines{
+    width:30px;
+    height: 6px;
+    background-color: #0059b2;
+    border-radius: 1.5px;
+    position: relative;
+    margin: 0 auto 15px auto;
+    }
+.smallLines::before,.smallLines::after{
+    content: "";
+    width: 15px;
+    height: 1px;
+    background-color:#768c9b;
+    position: absolute;
+    left: -18px;
+    top: 3px;
+}
+.smallLines::after{    
+    left: 32px;
+}
+
+.skill{
+    padding: 5px;
+    
+    }
+.skillsCategory{
+    font-size: 1.1em;
+    font-family: 'Baloo Bhaijaan', cursive;
+    font-weight: 400;
+    line-height: 25px;
+    text-decoration: underline;
+}
+.skillsList{
+    list-style: none;
+    margin: 15px auto 9px auto;
+    width: 59%;
+}
+.skillsList .skillsItems{
+    display: inline-block;
+} 
+.skillsItems img{
+    width: 150px;
+    height: 110px;
+}
+
+.fadeIn{
+    transform: translateY(10%);
+    opacity: 0;
+}
+
+@media screen and (max-width:450px){
+    .skillsItems img{
+        width: 95x;
+        height: 74px;
+    }
+}
+
 /*styling the work section ---------------------------------*/
 
 
@@ -406,6 +319,9 @@ nav{
     transform: translateY(0%);
     opacity: 1;
 }
+.Pdesc{
+    display: none;
+}
 
 @media screen and (max-width:765px){
     .workList li{
@@ -426,6 +342,8 @@ nav{
     display: flex;
     flex-flow: wrap;
     color: #ad8d73;
+    color: #555;
+   
 }
 .formToFill label span{
     flex:1;
@@ -442,8 +360,11 @@ label input, label textarea{
 
 #submit{
     float: right;
-    background-color: #ad8d73;
+    background-color: #3B647F;
     color:white;
+}
+#submit:hover{
+    background-color: #61747F;
 }
 
 /*styling the footer ---------------------------------------------*/
@@ -452,14 +373,18 @@ footer{
      padding: 15px;
      margin:20px 0px 0px 0px ;
      background-color: #768c9b;
-    
+     
 }
 footer .copyright{
     display: flex;
     justify-content: center;
     align-content: center;
     color: rgba(255,255,255,0.8);
-    font-size: 1.3em;
+    font-size: 1.5em;
+}
+.copyright{
+    font-family: 'Indie Flower', cursive;
+    font-weight: 500;
 }
 footer .socialMedia{
     font-size: 1.5em;
@@ -474,5 +399,154 @@ footer .socialMedia>a{
 }
 
 .con:hover{
-    color: rgba(0,0,255,0.9);
+    color:#3665c1;
 }
+
+/*styling the overlay----------------------------------------------------*/
+
+
+.overlay{
+    opacity: 1;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    z-index: 2000;
+    display: none;
+    
+}
+
+.layer{
+    position: relative;
+}
+.layer .leftArrow , .layer .rightArrow{
+    display: inline-block;
+    width: 55px;
+    height: 45px;
+    text-align: center;
+    font-size: 6em;
+    color: white;
+    opacity: 0.5;
+    line-height: 45px;
+    position: absolute;
+    top: 50%;
+    left:17%;
+    cursor: pointer;
+  
+}
+.layer .rightArrow{
+    left: 79%;
+}
+.layer .leftArrow:hover , .layer .rightArrow:hover{
+    opacity: 0.8;
+    box-shadow: 3px 0px 4px #000;
+}
+.leftArrow:active , .rightArrow:active{
+    box-shadow: 0px 0px 4px #000 !important;
+}
+
+
+.wrap{
+    position: relative;
+    padding: 5px;
+    margin: 15px auto 0 auto;
+    background: white;
+    width: 50%;
+    height: 90vh;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.1em;
+    overflow-y: scroll;
+    border:1px solid #e6e6e6;
+    box-shadow: 5px 10px 34px -7px #CCCCCC;
+    transform: translateY(-112%);
+    transition: all 1s Ease-In-Out;
+}
+
+
+
+.wrap .Ppicture img {
+   width: 100%;
+    height: 250px;
+}
+.layer .closeWindow{
+    position: relative;
+    display: inline-block;
+    left: 75%;
+    top:12px;
+    width: 55px;
+    text-align: center;
+    background-color: #444;
+    border-radius: 50%;
+    font-size: 2.7em;
+    color: #7F251A;
+    opacity: 0;
+    cursor: pointer;
+}
+.layer .closeWindow:hover{
+    background-color: #555;
+}
+.Pdescription h1,.Pdescription h2{
+    text-decoration: underline;
+}
+ .link{
+    margin-left: 39%;
+    margin-top: 30px;
+     width: 100px;
+     color:white;
+}
+
+.wrap .Pdescription p{
+    margin-left: 10px;
+}
+.layer.hideArrows .leftArrow,.layer.hideArrows .rightArrow{
+    opacity: 0;
+}
+/*styling the overlay on phone----------------------*/
+@media screen and (max-width:500px){
+    .layer .leftArrow ,.layer .rightArrow {
+        left: 0;
+        font-size: 3em ;
+    }
+    .layer .rightArrow{
+        left: 87%;
+    }
+    .wrap{
+        width: 76%;
+        margin: 15px 0 15px 50px;
+    }
+    .layer .closeWindow{
+        left: 84%;
+        width: 40px;
+        font-size: 1.7em;
+    }
+    .layer .leftArrow:hover , .layer .rightArrow:hover{
+    opacity: 0.8;
+    box-shadow: 0px 0px 0px #000;
+}
+    .leftArrow:active , .rightArrow:active{
+    box-shadow: 0px 0px 0px #000 !important;
+}
+    .Pdescription h1{
+     font-size: 23px;   
+    }
+    .Pdescription h2{
+        font-size: 18px;
+    }
+    
+}
+
+/*styling the cursor for the typed .js ------------------------------------*/
+.typed-cursor{
+    opacity: 1;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+

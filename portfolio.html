@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="home">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +17,7 @@
    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
  
     <script src="typed.js"></script>
    
@@ -28,8 +29,8 @@
         
       <div id="homePage">
               <div id="header" >
-               <div class="name">Abdesselam</div>
-                  <div class="hamburger"><label for="toggler"><img src="images/hamburger.png"/></label></div>
+               <div class="name"><a href="#home">Abdesselam</a> </div>
+                  <div class="hamburger"><label for="toggler"><img src="https://raw.githubusercontent.com/xpack94/Portfolio2/master/images/hamburger.png"/></label></div>
                <input type="checkbox" id="toggler"/>
                 <nav>
                     <ul class="headerList">
@@ -43,120 +44,204 @@
                 </nav>
                
             </div>
+            
              <div class="banner">
                     <span>Portfolio</span>
                 </div>
                 
                 <div class="DescriptionText">
-                
+                 <span class="typed-text"></span>
                 </div>
                 <div class="downArrow"><a href="#about"><i class="glyphicon glyphicon-circle-arrow-down"></i></a></div>
                 </div>
-               <p class="sectionName">ABOUT</p> 
+               <p class="sectionName" id="about">ABOUT</p> 
         <main>
-            <section class="about fadeIn" id="about">
+            
+            <section class="about">
+                <div class="description row">
+                    <div class="aboutMe col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        I am a knowledge seeker that tirelessly tries to improve and become better, 
+                        I am a front-end web Developer that spends his time creating new friendly interactive interfaces
+                        I am also passionate about programming languages and spend my time learning and developing my skills ,
+                        i work hard and do my best to become a full-stack Developer
+                        
+                    </div>
+                    <div class="services col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                       
+                        i can  help you take your business to the next level 
+                        with an awesome responsive and interactive website 
+                        i can also be an extra hand that can get the job done 
+                        if you are willing to hire someone that can help you finish a project well i'm your man 
+                        feel free to contact me !
+                    </div>
+                </div>
+                <div class="skills">
+                    <p class="mySkills">My Skills</p>
+                    <div class="smallLines"></div>
+                    <div class="mainSkills">
+                        <div class="frontEndSkills skill">
+                           <div class="skillsCategory">Front End Tools</div>
+                            <ul class="skillsList">
+                                <li class="skillsItems"><img src="images/html.png" alt="html5"></li>
+                                <li class="skillsItems"><img src="images/css3.png" alt="css3"></li>
+                                <li class="skillsItems"><img src="images/js.png" alt="javascript"></li>
+                            </ul>
+                        </div>
+                         <div class="frameWorks skill">
+                            <div class="skillsCategory">Javascript Libraries</div>
+                            <ul class="skillsList">
+                                <li class="skillsItems"><img src="images/jquery.gif" alt="jquery"></li>
+                            </ul>
+                        </div>
+                        <div class="frameWorks skill">
+                            <div class="skillsCategory">FrameWorks</div>
+                            <ul class="skillsList">
+                                <li class="skillsItems"><img src="images/bootstrap.png" alt="bootstrap"></li>
+                            </ul>
+                        </div>
+                        <div class="languages">
+                             <div class="skillsCategory">Other Languages</div>
+                            <ul class="skillsList">
+                                <li class="skillsItems"><img src="images/python.png" alt="python"></li>
+                                <li class="skillsItems"><img src="images/java.png" alt="java"></li>
+                                <li class="skillsItems"><img src="images/android.png" alt="android"></li>
+                            </ul>
+                        </div>
+                        <div class="versionControl">
+                             <div class="skillsCategory">Version Control</div>
+                            <ul class="skillsList">
+                                <li class="skillsItems"><img src="images/git.png" alt="git"></li>
+                                
+                            </ul>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                </div>
                 
-                <div class="sample even invisible">
-                  <div class="informationHolder">
-                          <div class="userPicture picture"><img src="images/matt-icons_preferences-desktop-personal.png"/></div>
-                        <div class="information invisible">
-                           <span>ABOUT ME !</span> <br/>
-                          i'am a knowledge seeker that tirelessly tries to improve and become better, <br/>
-                           i'am a front-end web Developer that spends his time creating new friendly interactive interfaces  <br/>
-                           i'am also passionate about programming languages and spend my time learning and developing my skills ,<br/>
-                           i work hard and do my best to become a full-stack Developer 
-                        </div>
-                    </div>
-                </div>
-                <div class="verticalLine"></div>
-                  <div class="sample odd invisible">
-                  <div class="informationHolder">
-                          <div class="picture"><img src="images/services.png"/></div>
-                        <div class="information invisible">
-                          <span>Services ! </span> <br/>
-                           i can be help you take your business to the next level <br/>
-                           with an awesome resopnsive and interactive website <br/>
-                           i can also be an extra hand that can get the job done <br/>
-                           if you are willing to hire someone that can help you finish a project well i'm your man <br/>
-                           feel free to contact me ! 
-                        </div>
-                    </div>
-                </div>
-                 <div class="verticalLine"></div>
-                     <div class="sample even last invisible">
-                  <div class="informationHolder">
-                          <div class="userPicture picture"><img src="images/skills.png"/></div>
-                        <div class="information invisible">
-                          <span>SKILLS</span> <br/>
-                           <ul>
-                               <li><img src="images/html.png" alt="html5"></li>
-                               <li><img src="images/css3.png" alt="css3"></li>
-                               <li><img src="images/jquery.gif" alt="jquery"></li>
-                               <li><img src="images/bootstrap.png" alt="bootstrap"></li>
-                               <li><img src="images/js.png" alt="javascript"></li>
-                               <li><img src="images/java.png" alt="java"></li>
-                               <li><img src="images/android.png" alt="android"></li>
-                               <li><img src="images/python.png" alt="python"></li>
-                               <li><img src="images/git.png" alt="git"></li>
-                           </ul>
-                        </div>
-                    </div>
-                </div>
+                
             </section>
-             <p class="sectionName">WORK</p> 
+            
+            
+             <p class="sectionName" id="work">WORK</p> 
              
-           <section class="fadeIn" id="work" >
-                 <div class="section work">
+           <section class=" work fadeIn"  >
+                 <div class="section ">
                     <ul class="workList">
-                        <li>
-                            <div class="title">Simon Game</div>
+                        <li data-number="1">
+                            <div class="title" >Simon Game</div>
                            
-                            <a href="https://codepen.io/xpack/full/YxYpzJ/"> <img src="images/simon.png" alt="simon game"></a>
-                        </li>
-                        <li>
-                            <div class="title">Podomoro Clock</div>
+                            <a href="https://codepen.io/xpack/full/YxYpzJ/" > <img src="https://raw.githubusercontent.com/xpack94/Portfolio2/master/images/simon.png" alt="simon game"></a>
+                            <div class="Pdesc">
+                             <h1>Description</h1>
+                             <p>Simon Game is a FreeCodeCamp Advanced Project , Which is a Game of sounds where the Player is presented to a random sequence of sounds , each sound has a color matching it so the player can see what are the sounds that are being played.
+                             the game starts off easy with just one random sound played and then the number of sounds played is increased by one each time the player guesses the sequece right, the role of the player is to replay the exact same sequence of sounds that they hear ,if they get the sequence right the level is increased by one 
+                             if the player reaches level 20 they win the game.
+                             when the strict mode is on the game restarts from the beginning if the player guesses a sequence wrong !  </p>
+                            </div>
                             
-                            <a href="https://codepen.io/xpack/full/BdRqwx/"><img src="images/podomoro.png" alt="podomoro clock"></a>
                         </li>
-                        <li>
-                            <div class="title">Local Weather</div>
+                        <li data-number="2">
+                            <div class="title"  >Podomoro Clock</div>
                             
-                            <a href="https://codepen.io/xpack/full/MoyegE/"><img src="images/weather.png" alt="local weather"></a>
+                            <a href="https://codepen.io/xpack/full/BdRqwx/"><img src="https://raw.githubusercontent.com/xpack94/Portfolio2/master/images/podomoro.png" alt="podomoro clock"></a>
+                             <div class="Pdesc">
+                               <h1>Description</h1>
+                               <p>The podomoro clock is a FreeCodeCamp Advanced Project , which is a clock that has two phases <br/>
+                                <strong>phase 1</strong> is the session which is the length of time needed for work and is represented by the button s .<br/> 
+                                <strong>phase 2</strong> is the break which is the break time and is represented by the button b.<br/>
+                                both of these phases can be set by the user , the use can increase or decrease the length of time for either one of them by pressing on the button of the phase they want to adjust following it by the down and up arrow button  </p>
+                              </div>
                         </li>
-                        <li>
-                            <div class="title">wikipedia viewer</div>
-                            <a href="https://codepen.io/xpack/full/eRdBMJ/"><img src="images/wikipedia.png" alt="wikipedia viewer"></a>
+                        <li data-number="3">
+                            <div class="title"  >Local Weather</div>
+                            
+                            <a href="https://codepen.io/xpack/full/MoyegE/"><img src="https://raw.githubusercontent.com/xpack94/Portfolio2/master/images/weather.png" alt="local weather"></a>
+                               <div class="Pdesc">
+                               <h1>Description</h1>
+                               <p>The Local Weather Machine is a web application that allows the user to get the local weather of the city they live in <br/>
+                               it uses two api's to do that the first one gets the user's data such as the location and the second one uses the <i >darksky api</i> that gets the data pulled from the first api to display the local weather <br/>
+                               the temperature is shown in fahrenheit but could be converted to C by clicking on it  </p>
+                              </div>
                         </li>
-                        <li>
-                            <div class="title">twitch viewer</div>
-                            <a href="https://codepen.io/xpack/full/NgpQMG/"><img src="images/twitch.png" alt="twitch viewer"></a>
+                        <li data-number="4">
+                            <div class="title"  >wikipedia viewer</div>
+                            <a href="https://codepen.io/xpack/full/eRdBMJ/"><img src="https://raw.githubusercontent.com/xpack94/Portfolio2/master/images/wikipedia.png" alt="wikipedia viewer"></a>
+                             <div class="Pdesc">
+                               <h1>Description</h1>
+                               <p>The WikiPedia Viewer is a web Application that allows the user to type and search for something on wikipedia.<br/>the application takes the user's input and uses the <i>wikipedia api</i> to pull the data corresponding to that input and displays all the information that are related to what the user is looking for .<br/>
+                               </p>
+                              </div>
                         </li>
-                        <li>
+                        <li data-number="5">
+                            <div class="title"  >twitch viewer</div>
+                            <a href="https://codepen.io/xpack/full/NgpQMG/"><img src="https://raw.githubusercontent.com/xpack94/Portfolio2/master/images/twitch.png" alt="twitch viewer"></a>
+                             <div class="Pdesc">
+                               <h1>Description</h1>
+                               <p>the Twitch Viewer is a web Application that allows the user to track certain channels on twitch , the user is notified wether these channels are online or offline <br/>
+                               
+                               </p>
+                               <h2>Fonctionalities</h2>
+                               <p>
+                                   - <strong> search box :</strong> it allows the user to search for twitch channels by name , the channel is then displayed on screen with a couple information concerning it. <br> the user can add the channel to their channels list   
+                               </p>
+                               <strong>-Online Button :</strong> displays all the Online channels from the channels list.<br/>
+                               <strong>-Offline Button :</strong> displays all the offline channels from the channels list<br/>
+                               <strong>-All Button :</strong> displays all of the channels list.
+                              </div>
+                        </li>
+                        <li data-number="6">
                             <div class="title">TicTacToe Game</div>
                            
                             <a href="https://codepen.io/xpack/full/VzzENm/"> <img src="images/tictactoe.png" alt="tictactoe game"></a>
-                        </li>
-                        <li>
+                              <div class="Pdesc">
+                               <h1>Description</h1>
+                               <p>The TicTacToe is a game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.<br/>
+                               in this project it was  only created to be played against the computer which in this case is unbeatable . 
+                               </p>
+                              </div>
+                        </li >
+                        <li data-number="7">
                             <div class="title">The Random quotes Machine</div>
-                            <a href="https://codepen.io/xpack/full/jwPvLE/"><img src="images/quotes.png" alt="randome quotes machine"></a>
+                            <a href="https://codepen.io/xpack/full/jwPvLE/"><img src="https://raw.githubusercontent.com/xpack94/Portfolio2/master/images/quotes.png" alt="randome quotes machine"></a>
+                              <div class="Pdesc">
+                               <h1>Description</h1>
+                               <p>The Random Quotes Machine is a web Application that generates random <i>Game of Thrones </i> quotes from different characters in the tv-show<br/>
+                               the user can also share the generated quote on twitter .
+                               </p>
+                              </div>
                         </li>
-                        <li>
+                        <li data-number="8">
                             <div class="title">Calculator</div>
-                            <a href="https://codepen.io/xpack/full/bwPGPP/"><img src="images/calc.png" alt="calculator"></a>
+                            <a href="https://codepen.io/xpack/full/bwPGPP/"><img src="https://raw.githubusercontent.com/xpack94/Portfolio2/master/images/calc.png" alt="calculator"></a>
+                            <div class="Pdesc">
+                               <h1>Description</h1>
+                               <p> The calculator is one of FreeCodeCamp advanced project , it is a normal calculator with the basic buttons  
+                               </p>
+                              </div>
+                            
                         </li>
-                        <li>
+                        <li data-number="9">
                             <div class="title">The Tribute Page</div>
-                            <a href="https://codepen.io/xpack/full/zoOaLa/"><img src="images/tribute.png" alt="tribute page"></a>
+                            <a href="https://codepen.io/xpack/full/zoOaLa/"><img src="https://raw.githubusercontent.com/xpack94/Portfolio2/master/images/tribute.png" alt="tribute page"></a>
+                             <div class="Pdesc">
+                               <h1>Description</h1>
+                               <p> The Tribute Page is a proeject made about the leader of the Indian independence movement against British rule Mahatma Gandhi <br/>
+                               it tells his time line with the most important dates and also shows the big role he played in the worl war 1 
+                               </p>
+                              </div>
                         </li>
                        
                     </ul>
                     
                 </div>
+           
             </section>
              <p class="sectionName">CONTACT</p> 
-            <section id="contact">
+            <section id="contact" class="contact">
                 <div class="row">
-                    <div class="col-md-6 hidden-s hidden-xs contactUs"><img src="images/contact-us.png" alt="contact us"></div>
+                    <div class="col-md-6 hidden-s hidden-xs contactUs"><img src="https://raw.githubusercontent.com/xpack94/Portfolio2/master/images/contact-us.png" alt="contact us"></div>
                     <div class="col-md-6 col-s-12 col-xs-12 formToFill">
                         <form action="">
                             <label for="name"><span>Your Name </span> <input type="text" id="name" placeholder="name"></label>
@@ -166,7 +251,7 @@
                             <label for="subject"><span>Subject </span> <input type="text" id="subject" placeholder="subject"></label>
                            
                             <label for="message"><span>Message</span> <textarea cols="50" rows="4" placeholder="your Message Here !"></textarea> </label>
-                            <button id="submit">Submit</button>
+                            <button id="submit" class="btn ">Submit</button>
                             
                             
                         </form>
@@ -178,6 +263,7 @@
             </section>
             
         </main>
+       
         <footer>
            <div class="row">
                  <div class="copyright col-lg-6 col-md-6 col-sm-12 col-xs-12">Abdesselam &copy; all rights reserved</div>
@@ -192,18 +278,33 @@
             
         </footer>
         
+             <div class="overlay ">
+              
+              <div class="layer hideArrows">
+                   <span class="leftArrow"> &lt; </span>
+                    <div class="closeWindow ">X</div>
+                    <div class="wrap ">
+                         <div class="Ppicture"></div>
+                        <div class="Pdescription">
+                        </div>
+                        <a class="btn btn-primary link" href="">check it</a>
+                    </div>
+                    <span class="rightArrow">&gt;</span>
+               </div>
+            </div>
     </div>
+     
     <script src="portfoliojs.js"></script>
    <script>
  
-var typed = new Typed('.DescriptionText', {
+var typed = new Typed('.typed-text', {
   strings: ["","Hello There !", "I'm Abdesselam ." ,"I'm a Front End Developer."],
   typeSpeed: 50,
 smartBackspace: true,
     backDelay: 1000,
     startDelay: 1000,
-    loop:false,
-    showCursor:false
+    loop:false
+  
     
 });
 
