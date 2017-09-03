@@ -11,6 +11,19 @@ $(function(){
     const hamburger=$(".hamburger");
     let min=0,max=0;
     let currentWork=0; //represents the number of the currentWork that is being displayed in the overlay
+    
+    //typed.js 
+    var typed = new Typed('.typed-text', {
+          strings: ["","Hello There!", "I'm Abdesselam ." ,"I'm a Front-End Developer."],
+          typeSpeed: 50,
+        smartBackspace: true,
+            backDelay: 1000,
+            startDelay: 1000,
+            loop:false
+        });
+    
+    
+    
     minMax();
     //creating two variables one for min and one for max depending on the number of li in the workList 
     function minMax(){
