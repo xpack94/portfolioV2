@@ -374,6 +374,11 @@ label input, label textarea{
 #submit:hover{
     background-color: #61747F;
 }
+@media screen and (max-width:400px){
+    label {
+        font-size: 0.8em !important;
+    }
+}
 
 /*styling the footer ---------------------------------------------*/
 
