@@ -14,7 +14,7 @@ $(function(){
     
     //typed.js 
     var typed = new Typed('.typed-text', {
-          strings: ["","Hello There!", "I'm Abdesselam ." ,"I'm a Front-End Developer."],
+          strings: ["","Hello There!", "I'm Abdesselam ." ,"I'm a software Developer." ,"scroll down to learn more about me"],
           typeSpeed: 50,
         smartBackspace: true,
             backDelay: 1000,
